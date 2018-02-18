@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>제목 :</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>내용 :</strong>
+  <%= @post.content %>
+</p>
+
+<%= link_to '편집', edit_post_path(@post) %> |
+<%= link_to '돌아가기', posts_path %>
